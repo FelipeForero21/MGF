@@ -1,0 +1,845 @@
+*{
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+/*Header de la pagina*/
+.contenedor-header{
+    background:linear-gradient(to bottom, rgb(28, 28, 30), rgba(27, 27, 27));
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 2.5rem;
+    gap: 3rem;
+    align-items: center;
+    text-decoration: none;
+
+}
+/*Responsive del header*/
+@media(min-width: 76.8rem ){
+    .contenedor-header{
+        display:flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        text-decoration: none;
+    }   
+}
+/*Contenedor del logo*/
+.contenedor-header img{
+    width: 10rem;
+    display: flex;
+}
+/*Efecto sombra del logo*/
+.contenedor-header img:hover{
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem black;
+    border-radius: 5rem;
+    transform: uppercase;
+    text-shadow: 0.8rem 0.1rem 0.1rem black;
+}
+/*Links del header*/
+.contenedor-header a{
+    text-decoration: none;
+    color: azure;
+    text-shadow: 0.8rem 2rem 2rem black;
+    padding: 1rem;
+}
+
+/*Efecto en las opciones al pasar el cursor sobre ellas*/
+.contenedor-header a:hover{
+    box-shadow: 0.3rem 0.3rem 0.3rem black;
+    border-radius: 5rem;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif ;
+    font-weight: bold;
+    padding: 1rem;
+    text-shadow: 0.3rem 0.1rem 0.1rem black;
+
+    
+}
+/*Efecto degradado en el color de fondo para el banner*/
+.banner-principal{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background: linear-gradient(to bottom, rgb(27, 27, 27), #212123d3, #3b0a63, rgba(63, 14, 66, 0.97) );
+
+}
+@media(min-width: 76.8rem ){
+    .banner-principal{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: linear-gradient(to bottom, rgb(27, 27, 27), #212123d3, #4b0a63, rgba(95, 12, 159, 0.97) );
+    }   
+}
+/*Imagen de la consola*/
+.montaje img{
+    display: flex;
+    width: 45rem;
+    height: 20rem;
+    position: relative;
+    flex-direction: column;
+}
+@media(min-width: 76.8rem ){
+    .montaje img{
+        display:flex;
+        flex-direction: column;
+        padding-left: 0rem;
+        width: 125rem;
+        height: 47rem;
+    
+    }   
+}
+/*Texto principal del banner*/
+.banner-principal h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+    color: aliceblue;
+    text-shadow: 0.5rem 0.1rem 0.1rem black;
+}
+@media(min-width: 76.8rem ){
+    .banner-principal h1{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 2.5rem;
+        padding-bottom: 1.5rem;  
+        text-shadow: 0.5rem 0.1rem 0.1rem black;
+    }   
+}
+/*Texto del banner*/
+.montaje p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: aliceblue;
+    padding-bottom: 2rem;
+    text-shadow: 0.5rem 0.1rem 0.1rem black;
+}
+@media(min-width: 76.8rem ){
+    .montaje p{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: aliceblue;
+        text-shadow: 0.5rem 0.1rem 0.1rem black;
+    
+    }   
+}
+/*Video que va dentro de la consola*/
+.montaje video{
+    background-color: transparent;
+    display: flex;
+    width: 22rem;
+    height: 37rem;
+    flex-direction: column;
+    z-index: 20;
+    position: absolute;    
+    top: 45rem;
+    left: 11.5rem;
+}
+@media(min-width: 76.8rem ){
+    .montaje video{
+        display:flex;
+        top: 25.5rem;
+        position: absolute;
+        z-index: 20rem;
+        height: 35rem;
+        width: 75rem;
+        left: 32.5rem;    
+    }   
+}
+/*Mascota virtual mouse*/
+.contenedor-mouse{
+    display: flex;
+    justify-content: space-between;  
+    
+}
+/*Imagen de mouse*/
+.contenedor-mouse img{
+    width: 15rem;
+    display: flex;
+    flex-direction: row;
+    padding-left: 2.5rem;
+}
+/*Texto de mouse*/
+.contenedor-mouse h2{
+    display: flex;
+    align-items: center;
+    padding-top: 6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: aliceblue;
+    text-shadow: -3px 3px 1px rgba(0, 0, 0, 0.909);
+
+}
+/*Secciones consolas, videojuegos y computadores*/
+.secciones-principales{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+.secciones{
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    height: 55rem;
+    background-image: url(img/videovideojuegos.mp4);
+    backdrop-filter: blur(70rem);
+    perspective: 500px;
+    border-radius: 3rem;
+    margin: 2rem;
+    box-shadow: 2rem 2rem 2rem #0f0d12c5;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/*Imagenes de las secciones tarjetas*/
+.secciones img{
+    width: 35rem;
+    height: 38rem;   
+    padding: 5rem;
+    display: flex;
+    border: 0.3rem;
+    border-radius: 3rem;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: 200ms;
+    
+}
+/*Efecto sobre imagenes de las secciones*/
+.secciones img:hover{
+    cursor: pointer;
+    transition: 300ms;
+    filter: brightness(1);
+    transform: scale(1.1) translateY(-15px);
+    
+}
+
+/*Letra del botón de las secciones*/
+.secciones h3{
+    display: flex;
+    position: relative;   
+    z-index: 1rem;
+    
+    
+}
+/*Efecto para el botón que direcciona a cada una de las secciones*/
+.secciones button{
+    background: none;
+    border: none;
+    padding: 0.1rem 0.25rem;
+    width: 13em;
+    height: 4.2em;
+    margin-bottom: 2rem;
+    background-color: #212121;
+    border: 0.08em solid #fff;
+    border-radius: 0.3rem;
+    font-size: 1.3.5rem;
+    
+}
+/*Efecto en la letra para el botón que redirecciona a las secciones*/
+.secciones a{
+    text-decoration: none; 
+    color: aliceblue; 
+    display: flex; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 8.20em;
+    height: 2.5em;
+    background-color: #212121;
+    border-radius: 0.2em;
+    font-size: 2rem;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.3em 0.1em 0.010em #fff;
+    
+}
+.secciones a:hover{
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+   
+}
+.secciones a:not(hover) {
+    transition: all 1s;
+
+}
+/*Color de las tarjetas consolas, videojuegos y computadoras*/ 
+main{
+    background-image:repeating-linear-gradient(rgba(95, 12, 159, 0.97), rgba(34, 16, 52, 0.991))
+}
+
+/*Seccion mensajes de información*/
+.mensajes-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 1rem;
+    padding: 3rem;
+    height: 55rem;
+    background: #fff7f7;
+
+}
+/*Tajeta de información envios*/
+.envios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(82, 28, 43, 0.386);
+    border-style:solid blue;
+    border-radius: 4rem;
+    width: 35rem;
+    height: 30rem;
+    padding: 3rem;
+    margin-top: 15rem;
+    box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, 0.762);
+
+}
+.envios img{
+    width: 35rem;
+}
+.envios h5{
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+.envios p{
+    padding-bottom: 1.5rem;
+    
+}
+/*Tarjeta de información calidad*/
+.calidad{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(81, 36, 49, 0.386);
+    border-style:solid blue;
+    border-radius: 4rem;
+    width: 35rem;
+    height: 30rem;
+    padding: 3rem;
+    margin-top: 15rem;
+    box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, 0.762);
+    justify-content: center;
+    align-items: center;
+}
+.calidad img{
+    width: 18rem;
+}
+.calidad h5{
+    top: 1rem;
+    font-size: 3rem;
+}
+/*Tarjeta de información pagos */
+.pagos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(62, 28, 38, 0.386);
+    border-style:solid blue;
+    border-radius: 4rem;
+    width: 35rem;
+    height: 30rem;
+    padding: 3rem;
+    margin-top: 15rem;
+    box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, 0.762);
+}
+.pagos img{
+    width: 18rem;
+}
+.pagos h5{
+    font-size: 3rem;
+    top: 1rem;
+}
+/*Footer*/
+.seccion-footer {
+    margin-top: 10rem;
+    height: 55rem;
+    background:linear-gradient(to bottom, rgb(46, 3, 62), rgb(72, 11, 98));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.seccion-footer .botones-footer{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    bottom: 2rem;
+}
+.logo-footer img{
+    width: 35rem;
+    height: 35rem;
+    display: flex;
+    align-content: space-around;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgb(0, 0, 0);
+    border-radius: 20rem;
+    background-color: #0a0a0a;
+}
+.seccion-footer p{
+    padding-top: 2rem;
+
+}
+/*Efecto de los botones del footer*/
+.botones-footer button.botones{
+    position: relative;
+    height: 20rem;
+    display: flex;
+    align-items: flex-end;
+    outline: none;
+    background: none;
+    border: none;
+}
+.botones-footer button.botones .button-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background-color: #0a0a0a;
+    border-radius: 2rem;
+    color: #181717;
+    font-weight: 700;
+    transition: 300ms;
+    box-shadow: 0.4rem 0.4rem 0.4rem 0.4rem black;
+    outline: #0f0f0f 2px solid;
+    outline-offset: 20;
+  }
+  
+  .botones-footer button.botones .button-holder svg {
+    margin-top: 10px;
+    height: 50px;
+    fill: #0f0f0f;
+    transition: 300ms;
+  }
+  .botones-footer button.botones .light-holder {
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .botones-footer button.botones .light-holder .dot {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    z-index: 2;
+  }
+  
+  .botones-footer button.botones .light-holder .light {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+    background: transparent;
+  }
+  .botones-footer button.botones:hover .button-holder svg {
+    fill: rgba(40, 40, 40, 0.389);
+  }
+  
+  .botones-footer button.botones:hover .button-holder {
+    color: rgb(255, 255, 255);
+    outline: rgb(245, 245, 245) 2px solid;
+    outline-offset: 2px;
+  }
+  
+  .botones-footer button.botones:hover .light-holder .light {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      180deg,
+      rgb(234, 235, 241) 0%,
+      rgba(255, 255, 255, 0) 75%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+/*Selección de marca de consolas*/
+.consolas{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+
+.seleccion-tarjeta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    padding: 2rem;
+    background-image: linear-gradient to bottom(163deg, #310d4f 0%, rgb(152, 25, 211) 100%);
+    border-radius: 0;
+    transition: all .3s;
+    
+}
+.first-content{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 30rem;
+    height: 35rem;
+    background-color: #342a2a8e;
+    border-radius: 0;
+    transition: all .2s;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    
+    
+}
+.first-content button{
+    border: none;
+    background: none;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem black;
+    padding: 1rem;
+    border-radius: 2rem;
+    
+}
+.first-content button a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 2rem;
+}
+/*Efecto al pasar sobre la tarjeta*/
+.first-content:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+   }
+   
+   
+.first-content img{
+    width: 25rem;
+    height: 20rem;
+}
+.seleccion-tarjetas:hover {
+    box-shadow: 0.8rem 0.8rem 0.8rem 0.8rem rgba(3, 254, 120, 0.813);
+   }
+
+
+
+
+/*Estilos de las tarjetas de compra*/
+.contenedores{
+    font-family: 'Roboto', sans-serif;
+    background: #060606a2;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(163deg, #000000 0%, rgb(84, 20, 186) 100%);
+
+    
+
+}
+.container {
+    width: 295px;
+    height: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+/*Efecto al pasar sobre las tarjetas*/
+  .container:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+  }
+  
+
+  .product-price::after {
+    content: "🛒" ;
+    padding-top: 1.25rem;
+    padding-left: 3.0rem;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    background: #e00a2a;
+    color: #fff;
+    height: 5rem;
+    width: 84%;
+    transition: all 80ms;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0;
+  }
+
+  .product-price .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 1.875em;
+    font-weight: 400;
+    color: #000;
+  }
+  
+  .product-price .price {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 0.625em;
+    color: #000;
+  }
+  
+  .product-price:hover::after {
+    bottom: 0;
+    opacity: 1;
+  }
+  
+  .product-price:active {
+    transform: scale(0.98);
+  }
+  
+  .product-price:active::after {
+    content: "ADDED !";
+    height: 3.120em;
+    
+  }
+  
+  
+  .card {
+    border-radius: 25px;
+    box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.84);
+  }
+  
+  .card-head {
+    position: relative;
+    height: 252px;
+    background: #252323;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #252323 8%, #212ad5 83%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #252323 8%, #2a26ef 83%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #252323 8%, #2522d0 83%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fa782e', endColorstr='#c82930', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    border-radius: 25px 25px 0 0;
+  }
+  
+  .card-logo {
+    width: 55px;
+    margin: 20px;
+  }
+  
+  .product-img {
+    position: absolute;
+    left: 0;
+    margin-top: -17px;
+    margin-left: 5px;
+    width: 300px;
+  }
+
+  .product-img:hover {
+    transform: translateY(-3px);
+  }
+  
+  .back-text {
+    display: inline-block;
+    font-size: 125px;
+    font-weight: 900;
+    margin-left: -7px;
+    margin-top: -12px;
+    opacity: 0.1;
+  }
+  
+  .card-body {
+    height: 255px;
+    background: #fff;
+    border-radius: 0 0 25px 25px;
+  }
+  
+  .product-title {
+    padding: 20px 20px 5px 20px;
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .product-title b {
+    font-weight: 900;
+    letter-spacing: 0px;
+  }
+  
+  .badge {
+    position: relative;
+    font-size: 10px;
+    font-weight: 300;
+    color: #fff;
+    background: #11e95b;
+    padding: 2px 5px;
+    border-radius: 4px;
+    top: -2px;
+    margin-left: 5px;
+  }
+  
+  .product-caption {
+    display: block;
+    padding: 0 20px;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  .product-rating {
+    padding: 0 20px;
+    font-size: 11px;
+  }
+  
+  .product-rating i.grey {
+    color: #acacab;
+  }
+  
+  .product-size h4 {
+    font-size: 11px;
+    padding: 0 21px;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .ul-size {
+    margin-left: 15px;
+  }
+  
+  .ul-size li {
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .ul-size li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 11px;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 23px;
+    color: #000;
+  }
+  
+  .ul-size li a.active {
+    background: #f35e3d;
+    color: #fff;
+  }
+  
+  .product-size:before,
+  .product-size:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  .product-color h4 {
+    font-size: 11px;
+    padding: 0 21px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .ul-color {
+    margin-left: 27px;
+  }
+  
+  .ul-color li {
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .ul-color li a {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+  }
+  
+  .ul-color li a.orange {
+    background: #f35e3d;
+  }
+  
+  .ul-color li a.green {
+    background: #11e95b;
+  }
+  
+  .ul-color li a.yellow {
+    background: #ffd414;
+  }
+  
+  .ul-color li a.active:after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    border: 1px solid #f35e3d;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    margin-left: -5px;
+    margin-top: -5px;
+  }
+  
+  .product-price {
+    position: absolute;
+    background: #0711d3;
+    padding: 7px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff;
+    border-radius: 7px;
+    margin-top: -13px;
+    margin-left: -5px;
+    box-shadow: -10px 20px 15px -10px rgba(17, 31, 233, 0.3);
+  }
+  
+  .product-price b {
+    margin-left: 5px;
+  }
+
+
+
+
+
+
+
+

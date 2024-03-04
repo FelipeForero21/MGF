@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #1b1726;
+}
+
+.centro {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+
+
+
+.bannerinicio {
+    background-color: #2A223A;
+    z-index: -1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    padding: 80px 0;
+  }
+
+  .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Estilos de los elementos de la barra de navegación */
+  .banner .navbar ul li {
+    position: relative;
+    float: left;
+  }
+  
+  .banner .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    display: block;
+  }
+  
+  /* Cambio de color al pasar el mouse por encima de los enlaces de navegación */
+  .banner .navbar ul li a:hover {
+    color: #A0c2fd;
+  }
+
+
+h1 {
+    font-size: 36px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #3F3456;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-size: 18px;
+}
+
+footer {
+  margin-top: 20rem;
+  background-color: #3F3456;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+.guia {
+  background-color: rgb(27, 19, 19);
+  color: white;
+  padding: 20px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.numero {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+form {
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Estilo del marcador de posición (placeholder) */
+::placeholder {
+  color: #ddd4d4;
+  font-size: 17px;
+}
+
+input {
+  padding: 18px 25px;
+  background-color: #3F3456;
+  border: 0;
+  border-radius: 25px;
+  outline: none;
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 17px;
+}
+
+.textomascota{
+  color: white;
+}
+
+.mouse {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.secciones-principales {
+  display: flex;
+  justify-content: center;
+}
+
+.secciones {
+  margin: 20px;
+}
+
+.envio {
+  background-color: purple;
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+  border: 1px solid;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.9s;
+}
+
+.envio:hover {
+  background-color: #8a2be2; /* Cambia el color al pasar el cursor por encima */
+}
+
+
+
+/* Contenedor de información de contacto */
+.contacto {
+  padding: 150px 30px;
+}
+
+/* Contenedor del blog */
+.blog {
+  background-color: #2A223A;
+  text-align: center;
+  padding: 50px;
+  border-radius: 50px;
+}
+
+/* Estilos de los campos de entrada de texto */
+input {
+  padding: 18px 25px;
+  background-color: #3F3456;
+  border: 0;
+  border-radius: 25px;
+  outline: none;
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 17px;
+}
+
+/* Formulario de entrada de texto */
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Estilo del marcador de posición (placeholder) */
+::placeholder {
+  color: #e0e0e0;
+  font-size: 17px;}
+
+h3 {
+    color: rgb(255, 255, 255);
+}
